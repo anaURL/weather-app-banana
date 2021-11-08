@@ -1,17 +1,23 @@
 body {
-    background: linear-gradient(
-      65.5deg,
-      rgb(23, 205, 205) -15.1%,
-      rgb(23, 25, 95) 71.5%
-    );
+    
   }
   
   .sunny {
     max-width: 100px;
     margin-top:0 auto;
   }
-  .container {
+  .weather-app {
+    background: linear-gradient(
+      65.5deg,
+      rgb(23, 205, 205) -15.1%,
+      rgb(23, 25, 95) 71.5%
+    );
     max-width: 600px;
+    border: 0.5px solid #848380;
+    margin:30px auto;
+    padding: 20px;
+    border-radius: 1%;
+
   }
   .btn-primary {
     background-color: #fff;
