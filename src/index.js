@@ -25,19 +25,17 @@ h2.innerHTML = `${day}, ${hours}:${minutes}`;
 // Search engine
 
 function displayWeather(response) {
-  console.log(response.data);
-  document.querySelector("#city").innerHTML = response.data.name;
-  document.querySelector("#temperatureNumber").innerHTML = Math.round(
-    response.data.main.temp
-  );
-  document.querySelector("#description").innerHTML =
-    response.data.weather[0].description;
-  response.data.weather[0].description.toUpperCase();
-  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
-  document.querySelector("#wind").innerHTML = response.data.wind.speed;
-  document.querySelector("#feels-like").innerHTML = Math.round(
-    response.data.main.feels_like
-  );
+    console.log(response.data);
+    document.querySelector("#city").innerHTML = response.data.name;
+    document.querySelector("#temperatureNumber").innerHTML = Math.round(
+      response.data.main.temp
+    );
+    response.data.weather[0].description.toUpperCase();
+    document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+    document.querySelector("#wind").innerHTML = response.data.wind.speed;
+    document.querySelector("#feels-like").innerHTML = Math.round(
+      response.data.main.feels_like
+    );
 }
 function searchCity(city) {
   let apiKey = "17d03f3d30691da284b38b6bdbdeb09d";
