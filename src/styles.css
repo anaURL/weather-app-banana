@@ -89,7 +89,11 @@
       margin-top:0 auto;
   }
   .currentParameters {
-    padding-top: 40px;
+    align-content: center;
+    position: relative;
+    max-width: 300px;
+    max-height: 300px;
+    padding-top: 50px;
   }
   .temperatureElement, .celsiusSign {
     font-size: 40px;
