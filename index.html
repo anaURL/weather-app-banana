@@ -51,25 +51,29 @@
       <div class="container">
         <div class="row">
           <div class="col">
+            <div class="clearfix current-weather"> 
             <div class="main-circle">
-              <img src="images/sun.png"alt="sunny" class="sunny">
+              <img src="images/sun.png"alt="sunny" class="float-left sunny">
               <br>
-              <span class="currentTemperature" id="temperatureNumber"> 26</span>
-              <span class="celsiusSign"> °C </span>
+              <span class="float-left currentTemperature" id="temperatureNumber"> </span>
+              <span class="float-left celsiusSign"> <strong> °C </strong></span>
               <br />
             </div>
             <br />
             <div class="row-6 timeAndDayToday">
               <h2></h2>
             </div>
+            </div>
           </div>
           <div class="col-6">
             <h3 class="city" id="city"></h3>
             <br />
-            <ul class="parameters"> <li> Humidity: <span id="humidity"> </span> %</li>
-              <li> Wind: <span id="wind"> </span> </li>
-              <li> Feels like: <span id="feels-like"> </span>°C </li> 
+            <div class="clearfix"> 
+            <ul class="parameters"> <li> Humidity: <span id="humidity" class="float-left"> </span> %</li>
+              <li> Wind: <span id="wind" class="float-left"> </span> m/s</li>
+              <li> Feels like: <span id="feels-like" class="float-left"> </span>°C </li> 
              </ul> 
+              </div>
           </div>
         </div>
         <hr />
@@ -111,13 +115,13 @@
               Fri
             </div>
           </div>
-          <div class="col-6">
-            <div class="codedBy">
-              <a href="https://github.com/bananakodira/weather-app-banana" target="_blank">Open source code</a> by Ana Banana 🍌
             </div>
           </div>
         </div>
       </div>
+      <div class="col-6">
+        <div class="codedBy">
+          <a href="https://github.com/bananakodira/weather-app-banana" target="_blank">Open source code</a> by Ana Banana 🍌
     </div>
     <br />
     <br />

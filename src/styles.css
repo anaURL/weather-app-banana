@@ -1,8 +1,5 @@
 
-  .sunny {
-    max-width: 100px;
-    margin-top:0 auto;
-  }
+
   .weather-app {
     background: linear-gradient(
       65.5deg,
@@ -41,8 +38,6 @@
     height: 160px;
     line-height: 20px;
     border-radius: 50%;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     color: grey;
     text-align: center;
     background: white;
@@ -56,8 +51,7 @@
     text-align: center;
     color: #fff;
     font-size: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    
   }
 
   hr {
@@ -73,8 +67,6 @@
     position: relative;
     color: #ffa952;
     font-size: 25px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
   
   h3 {
@@ -122,15 +114,27 @@
   }
   
   .codedBy {
-    text-align: left;
-    color: white;
-    padding-top: 50px;
-    padding-left: 20px;
+    text-align:center;
+    color: #16195F;
+    max-width: 600px;
+    margin-left:130px;
     font-size: 13px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
+
   a:hover {
       color:#fff;
   }
   
+  .current-weather img {
+    margin-right: auto;
+      max-width: 100px;
+      margin-top:0 auto;
+  }
+
+  .current-weather strong {
+    font-weight: normal;
+    
+  
+  }
