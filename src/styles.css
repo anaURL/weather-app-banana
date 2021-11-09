@@ -103,14 +103,25 @@
   .currentTemperature {
     font-size: 36px;
     margin-top: 20px;
+   font-weight: 300;
   }
   
   .celsiusSign {
     font-size: 36px;
+    margin-top: 20px;
+   font-weight: 300;
   }
   
   .feels-like {
     font-size: 14px;
+  }
+
+  .forecast {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: 18px;
+   font-weight: 100;
+  line-height: 25px;
+
   }
  
   .codedBy {
@@ -131,10 +142,4 @@
     margin-right: auto;
       max-width: 100px;
       margin-top:0 auto;
-  }
-
-  .current-weather strong {
-    font-weight: normal;
-  
-    
   }
