@@ -27,7 +27,7 @@ h2.innerHTML = `${day}, ${hours}:${minutes}`;
 function displayWeather(response) {
     console.log(response.data);
     document.querySelector("#city").innerHTML = response.data.name;
-    document.querySelector("#temperatureNumber").innerHTML = Math.round(
+    document.querySelector("#temperatureElement").innerHTML = Math.round(
       response.data.main.temp
     );
     response.data.weather[0].description.toUpperCase();
