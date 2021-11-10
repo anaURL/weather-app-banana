@@ -29,15 +29,17 @@ function displayWeather(response) {
     document.querySelector("#temperatureElement").innerHTML = Math.round(
       response.data.main.temp
     );
-    response.data.weather[0].description.toUpperCase();
+   
     document.querySelector("#humidity").innerHTML = response.data.main.humidity;
     document.querySelector("#wind").innerHTML = response.data.wind.speed;
     document.querySelector("#feels-like").innerHTML = Math.round(
       response.data.main.feels_like
     );
+    document.querySelector("#description").innerHTML= response.data.weather[0].description;
     let iconElement=document.querySelector("#icon");
     iconElement.setAttribute ("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
     iconElement.setAttribute("alt", response.data.weather[0].description);
+    response.data.weather[0].description.toUpperCase();
 }
 function searchCity(city) {
   let apiKey = "17d03f3d30691da284b38b6bdbdeb09d";
