@@ -83,11 +83,9 @@
     padding-bottom: 70px;
   }
   
-  .current-weather img {
-    margin-right: auto;
-      max-width: 100px;
-      margin-top:0 auto;
-  }
+.icon {
+  font-size: 25px;
+}
   .currentParameters {
     align-content: center;
     text-align: center;
