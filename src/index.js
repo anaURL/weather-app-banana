@@ -38,9 +38,8 @@ function displayWeather(response) {
     document.querySelector("#description").innerHTML= response.data.weather[0].description;
     let iconElement=document.querySelector("#icon");
     iconElement.setAttribute ("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
-    iconElement.setAttribute("alt", response.data.weather[0].description);
-    response.data.weather[0].description.toUpperCase();
-}
+    iconElement.setAttribute("alt", response.data.weather[0].description);}
+    
 function searchCity(city) {
   let apiKey = "17d03f3d30691da284b38b6bdbdeb09d";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
