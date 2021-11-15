@@ -43,7 +43,7 @@ function displayForecast (response) {
   forecastHTML + 
   `
   <div class="col clearfix">
-   <div class="forecast-weather-icon">${forecastDay.weather[0].icon}</div> 
+   <div class="forecast-weather-icon"> <img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"} alt="${forecastDay.weather[0].description}" /></div> 
     <span class=forecast-temperatures> 
       <span class=forecast-temperature-max> ${forecastDay.temp.max} </span>
       <span class=forecast-temperature-min> ${forecastDay.temp.min} </span>
