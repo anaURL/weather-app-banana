@@ -22,26 +22,34 @@ let day = days[now.getDay()];
 let h2 = document.querySelector("h2");
 h2.innerHTML = `${day}, ${hours}:${minutes}`;
 
+function formatDay (timestamp) {
+  let date=new Date (timestamp*1000);
+  let day= date.getDay();
+  let days= ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days [day];
+
+}
 
 function displayForecast (response) {
-  console.log(response.data.daily);
+  let forecast= response.data.daily;
   let forecastElement=document.querySelector("#forecast");
 
   let days=["Tue", "Fri", "Sat", "Sun", "Mon"];
 
   let forecastHTML= `<div class="row">`;
-  days.forEach(function(day){
+  forecast.forEach(function(forecastDay){
   forecastHTML = 
   forecastHTML + 
   `
   <div class="col clearfix">
-   <div class="forecast-weather-icon">⛅️</div> 
+   <div class="forecast-weather-icon">${forecastDay.weather[0].icon}</div> 
     <span class=forecast-temperatures> 
-      <span class=forecast-temperature-max> 20° </span>
-      <span class=forecast-temperature-min> 12° </span>
+      <span class=forecast-temperature-max> ${forecastDay.temp.max} </span>
+      <span class=forecast-temperature-min> ${forecastDay.temp.min} </span>
        </span>
     <br />
-    <div class="forecast-date"> ${day} </div>
+    <div class="forecast-date"> ${formatDay (forecastDay.dt)} </div>
   </div>
 `;
 });
@@ -57,6 +65,7 @@ let apiUrl= `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.l
 console.log(apiUrl);
 axios.get(apiUrl).then(displayForecast);
 }
+
 
 function displayWeather(response) {
     document.querySelector("#city").innerHTML = response.data.name;
