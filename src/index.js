@@ -22,7 +22,41 @@ let day = days[now.getDay()];
 let h2 = document.querySelector("h2");
 h2.innerHTML = `${day}, ${hours}:${minutes}`;
 
+
+function displayForecast (response) {
+  console.log(response.data.daily);
+  let forecastElement=document.querySelector("#forecast");
+
+  let days=["Tue", "Fri", "Sat", "Sun", "Mon"];
+
+  let forecastHTML= `<div class="row">`;
+  days.forEach(function(day){
+  forecastHTML = 
+  forecastHTML + 
+  `
+  <div class="col clearfix">
+   <div class="forecast-weather-icon">⛅️</div> 
+    <span class=forecast-temperatures> 
+      <span class=forecast-temperature-max> 20° </span>
+      <span class=forecast-temperature-min> 12° </span>
+       </span>
+    <br />
+    <div class="forecast-date"> ${day} </div>
+  </div>
+`;
+});
+forecastHTML = forecastHTML + `</div>`;
+forecastElement.innerHTML = forecastHTML;
+}
+
 // Search engine
+
+function getForecast(coordinates) {
+let apiKey = "17d03f3d30691da284b38b6bdbdeb09d";
+let apiUrl= `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+console.log(apiUrl);
+axios.get(apiUrl).then(displayForecast);
+}
 
 function displayWeather(response) {
     document.querySelector("#city").innerHTML = response.data.name;
@@ -38,8 +72,11 @@ function displayWeather(response) {
     document.querySelector("#description").innerHTML= response.data.weather[0].description;
     let iconElement=document.querySelector("#icon");
     iconElement.setAttribute ("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
-    iconElement.setAttribute("alt", response.data.weather[0].description);}
-    
+    iconElement.setAttribute("alt", response.data.weather[0].description);
+
+    getForecast(response.data.coord);
+    }
+
 function searchCity(city) {
   let apiKey = "17d03f3d30691da284b38b6bdbdeb09d";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
