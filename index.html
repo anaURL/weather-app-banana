@@ -27,7 +27,7 @@
       <!-- Search form -->
       <form class="search-form" , id="search-form">
         <div class="row">
-          <div class="col-6">
+          <div class="col-9">
             <input
               type="search"
               class="form-control"
@@ -45,11 +45,7 @@
           </div>
 
 <!-- Current location button -->
-          <div class="col-3">
-            <button class="btn btn-success w-100" id="current-location-btn">
-              Current📍
-            </button>
-          </div>
+          
         </div>
       </form>
       <br />
@@ -74,7 +70,8 @@
           </div>
 
 <!-- Weather parameters on the right-->        
-            <div class="col-6 clearfix"> 
+            <div class="col-6 "> 
+              <div class="row-6"> 
             <ul class="container currentParameters"> <h3 class="float-left city" id="city"></h3> 
               <li>  <span id="description" class="float-left description"> </span> </li> 
               <li> Humidity: <span id="humidity" class="float-left"> </span> %</li>
@@ -82,14 +79,15 @@
               <li> Feels like: <span id="feels-like" class="float-left"> </span>°C </li> 
              </ul> 
             </div>
-            </div>
+          </div>
         </div>
         <hr />
-
+        
 <!-- Forecast for the next 5 days --> 
         <div class="forecast" id="forecast">
           </div>
     </div> 
+  </div>
     <div class="container">
       <div class="row">
       <div class="col-2 codedBy"> 

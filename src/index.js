@@ -28,7 +28,6 @@ function formatDay (timestamp) {
   let days= ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
   return days [day];
-
 }
 
 function displayForecast (response) {
@@ -111,8 +110,5 @@ function getCurrentLocation(event) {
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
-
-let currentLocationButton = document.querySelector("#current-location-btn");
-currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("San Diego");

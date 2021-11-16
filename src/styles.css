@@ -1,7 +1,7 @@
   h2, h3 {
     text-align: center;
     position: relative;
-    color: #ffa952;
+    color: #EC6E4C;
     font-size: 25px;
   }
   
@@ -28,109 +28,98 @@
     border: 0;
     opacity: 0.25;
   }
-  a:hover {
-    color: #fff;
+a:hover {
+  color: #fff;
   }
 
-  .weather-app {
-    background: linear-gradient(
-      65.5deg,
-      rgb(23, 205, 205) -15.1%,
-      rgb(23, 25, 95) 71.5%
+.weather-app {
+background: linear-gradient(
+  65.5deg,
+  rgb(23, 205, 205) -15.1%,
+  rgb(23, 25, 95) 71.5%
     );
-    max-width: 600px;
-    border: 0.5px solid #848380;
-    margin:30px auto;
-    padding: 20px;
-    border-radius: 1%;
+max-width: 600px;
+border: 0.5px solid #848380;
+margin:30px auto;
+padding: 20px;
+border-radius: 1%;
 
   }
-  .btn-primary {
-    background-color: #fff;
-    color: #ffa952;
-    font-weight: 400;
+.btn-primary {
+background-color: #EC6E4C;
+color: #fff;
+font-weight: 400;
+border: none;
   }
   
-  .btn-success {
-    background-color: #ffa952;
-    color: #fff;
-    position: relative;
-    border: none;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-weight: 400;
-  }
-  .btn-succes:hover {
-    background-color: #fff;
-    color: #ffa952;
-    border: none;
+ 
+.btn-primary:hover {
+background-color: #fff;
+color: #EC6E4C;
+border: none;
   }
   
-  .main-circle {
-    width: 160px;
-    height: 160px;
-    line-height: 20px;
-    border-radius: 50%;
-    color: grey;
-    text-align: center;
-    background: white;
-    border: 2px solid #ffa952;
-    margin: 10px auto 0;
-    padding-top: 15px;
-    padding-bottom: 70px;
+.main-circle {
+width: 160px;
+height: 160px;
+line-height: 20px;
+border-radius: 50%;
+color: grey;
+text-align: center;
+background: white;
+border: 2px solid #EC6E4C;
+margin: 10px auto 0;
+padding-top: 15px;
+padding-bottom: 70px;
   }
   
-.icon {
-  font-size: 30px;
-}
 .temperatureElement, .celsiusSign {
   position: relative;
-  font-size: 40px;
+  font-size: 26px;
   margin-top: 20px;
   margin-bottom: 40px;
  font-weight: 300;
 }
-  .currentParameters {
-    display: block;
-    align-content: center;
-    text-align: center;
-    position: relative;
-    max-width: 300px;
-    max-height: 300px;
-    margin: 10px auto 0;
-    padding-top: 50px;
+.currentParameters {
+  display: block;
+  align-content: center;
+  text-align: center;
+  position: relative;
+  max-width: 300px;
+  max-height: 300px;
+  padding-top: 50px;
   }
+
 .description {
-  font-style: italic;
-  text-transform: capitalize;
+font-style: italic;
+text-transform: capitalize;
 }
  
-  .forecast {
-  display: block;
-  text-align: center;
-  flex: auto;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 100;
-  line-height: 25px;
-  color: #ffff;
+.forecast {
+display: block;
+text-align: center;
+flex: auto;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: 100;
+line-height: 25px;
+color: #ffff;
   }
 
-  .forecast-weather-icon {
-    position: relative;
-
+.forecast-weather-icon {
+position: relative;
   }
 
-  .forecast-temperature-max{
-    font-weight: 300;
+.forecast-temperature-max{
+font-weight: 300;
   }
 
-  .codedBy {
-    display: block;
-    margin-left: 340px;
-    margin-top: -10px;
-    color:#183F76;
-    font-size: 10px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+.codedBy {
+display: block;
+margin-left: 340px;
+margin-top: -10px;
+color:#183F76;
+font-size: 10px;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
 
