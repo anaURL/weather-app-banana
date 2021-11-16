@@ -84,9 +84,11 @@
   font-size: 30px;
 }
 .temperatureElement, .celsiusSign {
+  position: relative;
   font-size: 40px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
  font-weight: 300;
 }
   .currentParameters {
@@ -113,6 +115,10 @@
   color: #ffff;
   }
 
+  .forecast-weather-icon {
+    position: relative;
+
+  }
 
   .forecast-temperature-max{
     font-weight: 300;
