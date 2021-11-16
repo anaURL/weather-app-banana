@@ -81,12 +81,12 @@ padding-bottom: 70px;
  font-weight: 300;
 }
 .currentParameters {
-  display: block;
+ 
   align-content: center;
   text-align: center;
   position: relative;
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 500px;
+  max-height: 500px;
   padding-top: 50px;
   }
 
