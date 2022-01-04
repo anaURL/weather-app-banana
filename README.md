@@ -1,4 +1,5 @@
 
+<img width="605" alt="Screen Shot 2022-01-04 at 2 12 13 PM" src="https://user-images.githubusercontent.com/89602993/148064546-10116780-f57f-400d-9ad3-2cfa004469d7.png">
 
 ## WeatherApp
 This is my first app created during the SheCodes Plus coding workshop 
